@@ -487,7 +487,7 @@ sub upload_file :Path("upload_file") {
     $c->detach('unauthorized') unless $c->user_exists;
     $c->detach('bad_request') unless (scalar(@_) == 3 || scalar(@_) == 2) && $c->req->method eq "POST";
 
-    my $finalize = sub { $c->engine->finalize_read($c); };
+    my $finalize = sub { $c->finalize_read($c); };
 
     # Check that the user hasn't exceeded their quota.
     my ($ok, $qerror) = $pre_check_quota->($c);
