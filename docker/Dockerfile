@@ -200,7 +200,7 @@ Alias "/ibexexps" "/ibexdata/ibexexps"\n\
     Require all granted\n\
 </Directory>\n\
 \n\
-AliasMatch \"^/ibexexps/(.+)/(.+)/server\\.py\\?resource=(.+)$\" \"/ibexdata/deploy/\$1/\$2/ibex/chunk_includes/\$3\"\n\
+AliasMatch \"^/ibexexps/(.+)/(.+)/(.+\\.(mp3|ogg|wav|m4a|png|jpg|bmp|mp4|webm|ogv))$\" \"/ibexdata/deploy/\$1/\$2/ibex/chunk_includes/\$3\"\n\
 \n\
 <Directory \"/ibexdata/deploy\" >\n\
     AllowOverride None\n\
