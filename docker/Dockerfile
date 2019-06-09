@@ -199,9 +199,9 @@ Alias "/ibexexps" "/ibexdata/ibexexps"\n\
     DirectoryIndex experiment.html\n\
     Require all granted\n\
 </Directory>\n\
-#\n\
-#AliasMatch \"^/ibexexps/(.+)/(.+)/server[.]py[?]resource=(.+)$\" \"/ibexdata/deploy/$1/$2/ibex/chunk_includes/$3\"\n\
-#\n\
+\n\
+AliasMatch \"^/ibexexps/(.+)/(.+)/server[.]py[?]resource=(.+)$\" \"/ibexdata/deploy/$1/$2/ibex/chunk_includes/$3\"\n\
+\n\
 # Relax access to content within /var/www.\n\
 #\n\
 <Directory \"/var/www\">\n\
