@@ -207,6 +207,7 @@ Alias "/ibexexps" "/ibexdata/ibexexps"\n\
     # Require all granted\n\
 </Directory>\n\
 \n\
+RewriteEngine On\n\
 RewriteRule ^/ibexexps/(.+)/(.+)/(.+\\.(?:mp3|ogg|wav|m4a|png|jpg|bmp|mp4|webm|ogv))$ /ibexdata/deploy/\$1/\$2/ibex/chunk_includes/\$3 [NC,L]\n\
 \n\
 # Relax access to content within /var/www.\n\
