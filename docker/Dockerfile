@@ -205,8 +205,9 @@ Alias "/ibexexps" "/ibexdata/ibexexps"\n\
 #AliasMatch \"^/ibexexps/(.+)/(.+)/(.+\\.(?:mp3|ogg|wav|m4a|png|jpg|bmp|mp4|webm|ogv))$\" \"/ibexdata/deploy/\$1/\$2/ibex/chunk_includes/\$3\"\n\
 #\n\
 <Directory \"/ibexdata/deploy\" >\n\
-    AllowOverride all\n\
-    # Require all granted\n\
+    Options +FollowSymLinks\n\
+    AllowOverride All\n\
+    Require all granted\n\
 </Directory>\n\
 \n\
 RewriteEngine On\n\
