@@ -23,7 +23,7 @@ Currently hosting <b>[% experiment_count %]</b> experiment[% IF experiment_count
 </p>
 [% END %]
 <p class="smallprint fpfooter">
-Contact <a href="mailto:[% webmaster_email %]">[% webmaster_email %]</a> if you have any issues, or try the <a href="https://lab.florianschwarz.net/PennController/forums/">PennController's forums</a> or the <a href="https://groups.google.com/group/ibexexperiments">google group</a>.
+Contact <a href="mailto:[% webmaster_email %]">[% webmaster_email %]</a> if you have any issues, or try the <a href="https://www.pcibex.net/forums/forum/support/" target="_blank">PennController's forums</a>.
 </p>
 <p class="smallprint fpfooter [% IF experiment_count %]nasty[% END %]">
 The code for this site is BSD-licensed and available on <a rel="external" href="https://github.com/PennController/ibexfarm">github</a>.
