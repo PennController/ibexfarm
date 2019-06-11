@@ -7,10 +7,8 @@
 [% END %]
 <p>Design experiments</p>
 </a>
-<a class="button" href="
-</div>
 [% eurl = experiment_base_url _ example_experiment_user _ '/' _ example_experiment_name _ '/experiment.html' | url %]
-<a rel="external" href="[% eurl %]">
+<a class="button" rel="external" href="[% eurl %]">
 <p>View an example experiment</p>
 </a>
 </div>
