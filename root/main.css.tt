@@ -53,6 +53,42 @@ div#outer2 {
     font-size: [% stdsize %];
 }
 
+.button-row {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    height: calc(1.25 * 12em);
+}
+@media screen and (max-width: 1340px) {
+  .button-row {
+    height: calc(2 * 1.25 * 12em) !important;
+    flex-direction: column;
+  }
+}
+
+.button {
+    width: 20em;
+    text-align: center;
+    margin: auto;
+    background-color: lightsteelblue;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 1.25em;
+    display: flex;
+    height: 12em;
+    margin-bottom: 1em
+}
+.button:hover {
+    background-color: #231F20;
+    text-decoration: none;
+}
+
+.button p {
+    margin: auto;
+    text-align: center;
+    padding: 1em;
+}
+
 a#ibex {
     display: block;
     width: 150px;
@@ -61,8 +97,9 @@ a#ibex {
     background-image: url('[% BASE_URI _ 'static/images/pcibex-logo.png'%]');
     background-repeat: no-repeat;
     background-size: cover;
-    float: left;
-    margin-right: 2em;
+    /* float: left; */
+    /* margin-right: 2em; */
+    margin: auto;
 }
 a#ibex + p {
     margin-top: 4em;
