@@ -65,9 +65,7 @@
 <div id="login_info">
 
 <a href="[% c.uri_for("/") %]">home</a>
-[% IF ! c.user_exists %] | <a href="[% c.uri_for("/login") %]">login</a>
-|
-<a href="[% c.uri_for("/newaccount") %]">create an account</a>
+[% IF ! c.user_exists %] | <a href="[% c.uri_for("/login") %]">login/signup</a>
 [% END %] |
 <a rel="external" href="https://github.com/addrummond/ibex/blob/master/docs/manual.md">ibex docs</a> (<a href="http://spellout.net/latest_ibex_manual.pdf">pdf</a>)
  |
