@@ -13,6 +13,7 @@
 <a rel="external" href="[% eurl %]">
 <p>View an example experiment</p>
 </a>
+</div>
 <p style="text-align: center;">
 This site provides free hosting for <a rel="external" href="https://www.pcibex.net/">PCIbex</a> experiments.
 </p>
