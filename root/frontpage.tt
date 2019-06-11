@@ -1,4 +1,4 @@
-<h2>Welcome to the PCIbex farm</h2>
+<h2 style="text-align:center;">Welcome to the PCIbex farm</h2>
 <div class="button-row">
 [% IF c.user_exists %]
 <a class="button" href="[% c.uri_for("/myaccount") %]">
