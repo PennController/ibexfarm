@@ -276,13 +276,12 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
   }
 }
 .cell {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em;
     background-color: lightsteelblue;
     padding: 1em;
     border-radius: 0.5em;
     color: white;
-    width: 100%;
+    width: 80%;
     height: 15em;
 }
 .cell h2, .cell th {
@@ -294,7 +293,7 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
 }
 .cell .submit, .cell .submit input {
     text-align: center;
-    float: none;
+    float: none !important;
 }
 
 .field_comment {
