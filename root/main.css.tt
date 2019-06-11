@@ -282,7 +282,7 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
     border-radius: 0.5em;
     color: white;
     width: 80%;
-    height: 15em;
+    height: 14em;
 }
 .cell h2, .cell th {
     color: white;
