@@ -1,8 +1,10 @@
 [% USE HTML %]
-[% META title = ' - Login' %]
+[% META title = ' - Login or Signup' %]
 [% META js_scripts = 'newaccount.js' %]
 
-<h2>Login</h2>
+<div class="flex-container">
+<div class="cell login">
+<h2>Returning user</h2>
 
 [% IF login_msg %]
 <p class="message noskipto dontremove">
@@ -26,3 +28,34 @@
 </tr>
 </table>
 </form>
+</div>
+
+<div class="cell create">
+<h2>New user</h2>
+
+[% IF error %]
+<p class="error">
+[% HTML.escape(error) %]
+</p>
+[% END %]
+<form class="create_account" method="post" action="[% c.uri_for('/newaccount') %]">
+<table>
+<tr>
+<th>Username:</th><td colspan="2"><input type="text" name="username" size="20" value="[% HTML.escape(username) %]" /></td>
+</tr>
+<tr>
+<th>Password:</th><td colspan="2"><input type="password" name="password" size="20" /></td>
+</tr>
+<tr>
+<th>Verify password:</th><td colspan="2"><input type="password" name="password2" size="20" /></td>
+</tr>
+<tr>
+<th>Email:</th><td><input type="text" name="email" size="20" value="[% HTML.escape(email) %]" /><td class="field_comment">(optional)</span></td>
+</tr>
+<tr>
+<td class="submit" colspan="2"><input type="submit" name="submit" value="Create account" /></td><td></td>
+</tr>
+</table>
+</form>
+</div>
+</div>
