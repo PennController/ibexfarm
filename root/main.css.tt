@@ -274,6 +274,9 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
     height: 36em;
     flex-direction: column;
   }
+  .login input[type="text"], .login input[type="password"] {
+    width: 25vw;
+  }
 }
 .cell {
     margin: 1em;
