@@ -440,7 +440,7 @@ $.widget("ui.browseDir", {
             t.element.append(table = $("<table>")
                              .append($("<tr>")
                                      .append($("<th>")
-                                             .text(t.options.dir)
+                                             .text(t.options.name)
                                              .append($("<span>").css('font-weight', 'normal').html("&nbsp;("))
                                              .append(upload = $("<span>")
                                                      .addClass("linklike")
@@ -716,7 +716,7 @@ $(document).ready(function () {
         var sdirs = data.dirs.sort( (a,b)=>Object.keys(overwrite).indexOf(a)-Object.keys(overwrite).indexOf(b) );
         for (var i = 0; i < data.dirs.length; ++i) {
             var w;
-            $("#files").append(w = $("<div>").browseDir({ dir: overwrite[sdirs[i]]||sdirs[i] }));
+            $("#files").append(w = $("<div>").browseDir({ dir:sdirs[i], name: overwrite[sdirs[i]]||sdirs[i] }));
             dirsWidgetHash[sdirs[i]] = w;
         }
     });
