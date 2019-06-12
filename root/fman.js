@@ -77,7 +77,7 @@ $.widget("ui.browseFile", {
                                                            .attr('target', '_blank')
                                                            .attr('href', downloadLink)
 							   .append( $("<img>").attr('src', icon).addClass('file-icon') )
-							   .append( S("<span>").text(this.options.filename) )
+							   .append( $("<span>").text(this.options.filename) )
                                                            ))))
                         .append(delete_ = ((! this.options.writable) ? null : ++ncols && $("<td>")
                                 .append($("<div>")
