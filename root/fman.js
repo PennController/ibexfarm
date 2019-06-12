@@ -464,12 +464,16 @@ $.widget("ui.browseDir", {
                              .append($("<tr>")
                                      .append($("<td>")
                                              .append(upload_msg = $("<div>").hide())))
-			     .append(upload = $("<img>")
+			     .append($("<tr>")
+				     .append($("<td>")
+					     .append(upload = $("<img>")
 				     		    .attr('src', '/static/images/plus-round.svg')
 				                    .attr('title', 'Upload a file to this directory')
 						    .attr('alt', 'Upload file')
                                                     .addClass("linklike")
 				    		    .addClass("upload-dir"))
+					     )
+				     )
 			     );
 
             refresh_link.click(function () {
