@@ -259,14 +259,7 @@ $.widget("ui.browseFile", {
         if (edit) {
             edit.click(function () {
                 var editor = null;
-
-                var highlightConfig;
-                var m;
-                if (m = t.options.filename.match(/\.(.+)$/))
-                    highlightConfig = EXTENSION_TO_HIGHLIGHT_CONFIG[m[1].toLowerCase()];
-                if (!m || !highlightConfig)
-                    highlightConfig = EXTENSION_TO_HIGHLIGHT_CONFIG[''];
-
+		    
                 $("body").css('overflow', 'hidden');
 
                 function cleanup() {
