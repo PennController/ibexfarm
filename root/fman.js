@@ -455,12 +455,6 @@ $.widget("ui.browseDir", {
                                      .append($("<th>")
                                              .text(t.options.name)
                                              .append($("<span>").css('font-weight', 'normal').html("&nbsp;"))
-                                             .append(upload = //$("<span>")
-						     $("<img src='/static/images/plus-round.svg' title='Upload a file to this directory' alt='Upload file'>")
-                                                     .addClass("linklike")
-                                                     //.text("upload a file to this directory")
-						    )
-                                             .append($("<span>").css('font-weight', 'normal').html("&nbsp;"))
                                              .append(refresh_link = //$("<span>")
 						     $("<img src='/static/images/redo-arrow.svg' title='Refresh the list of files in this directory' alt='Refresh'>")
                                                      .addClass("linklike")
@@ -469,7 +463,14 @@ $.widget("ui.browseDir", {
                                              .append($("<span>").css('font-weight', 'normal').text(""))))
                              .append($("<tr>")
                                      .append($("<td>")
-                                             .append(upload_msg = $("<div>").hide()))));
+                                             .append(upload_msg = $("<div>").hide())))
+			     .append(upload = $("<img>")
+				     		    .attr('src', '/static/images/plus-round.svg')
+				                    .attr('title', 'Upload a file to this directory')
+						    .attr('alt', 'Upload file')
+                                                    .addClass("linklike")
+				    		    .addClass("upload-dir"))
+			     );
 
             refresh_link.click(function () {
                 t.refresh();
