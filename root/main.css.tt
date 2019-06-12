@@ -332,6 +332,9 @@ span.create_experiment .plus:hover {
     word-break: break-word;
 }
 
+img.linklike {
+    height: 1.25em;
+}
 
 .field_comment {
     color: [% lightish %];
