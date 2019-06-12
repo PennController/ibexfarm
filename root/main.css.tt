@@ -299,6 +299,40 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
     float: none !important;
 }
 
+
+span.create_experiment {
+    text-align: center;
+}
+span.create_experiment span {
+    display: block;
+}  
+span.create_experiment .plus {
+    font-size: 4em;
+    text-decoration: none !important;
+}
+span.create_experiment .plus:hover {
+    text-decoration: none !important;
+}
+.experiment_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.experiment_list ul li.experiment {
+    list-style: none;
+    width: 13em;
+    background-color: lightsteelblue;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1em;
+}
+.experiment_list ul li.experiment a {
+    font-size: 1.5em;
+    word-break: break-word;
+}
+
+
 .field_comment {
     color: [% lightish %];
     font-size: [% stdsmall %];
