@@ -362,7 +362,7 @@ form.login td.submit input {
 }
 
 /* For AJAX file upload weirdness. */
-.hoverClass {
+.hoverClass, .hover {
     text-decoration: underline;
     cursor: pointer;
 }
