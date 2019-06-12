@@ -159,7 +159,7 @@ $.widget("ui.experimentList", {
                                      .addClass("linklike")
                                      .addClass("create_experiment")
                                      .append($("<span>+</span>").addClass("plus"))
-                                     .append($("<span>Create a new experiment</span>"))
+                                     .append($("<span>Create a new experiment</span>")))
                              .append(opts = $("<div>")
                                      .addExperimentDialog({ createdCallback: refresh })
                                      .hide()));
