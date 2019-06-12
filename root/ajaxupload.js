@@ -159,7 +159,8 @@
 	        left : box.left + 'px',
 	        top : box.top + 'px',
 	        width : from.offsetWidth + 'px',
-	        height : from.offsetHeight + 'px'
+	        height : from.offsetHeight + 'px',
+		cursor: 'pointer'
 	    });        
     }
 
@@ -236,7 +237,7 @@
             action: 'upload.php',
             // File upload name
             name: 'userfile',
-            // Additional data to send
+	    // Additional data to send
             data: {},
             // Submit file as soon as it's selected
             autoSubmit: true,
@@ -303,7 +304,7 @@
         // DOM element                 
         this._input = null;
         // If disabled clicking on button won't do anything
-        this._disabled = false;
+        this._disabled = false;    
         
         // if the button was disabled before refresh if will remain
         // disabled in FireFox, let's fix it
@@ -351,6 +352,7 @@
             var input = document.createElement("input");
             input.setAttribute('type', 'file');
             input.setAttribute('name', this._settings.name);
+	    input.setAttribute('title', this._button.title||"Upload");
             
             addStyles(input, {
                 'position' : 'absolute',
@@ -361,7 +363,7 @@
                 'margin' : 0,
                 'padding' : 0,
                 'fontSize' : '480px',                
-                'cursor' : 'pointer'
+                'cursor' : 'pointer'            
             });            
 
             var div = document.createElement("div");                        
@@ -376,8 +378,11 @@
                 // in Internet Explorer
                 'direction' : 'ltr',
                 //Max zIndex supported by Opera 9.0-9.2
-                'zIndex': 2147483583
+                'zIndex': 2147483583,
+		// Make it a pointer
+		cursor: 'pointer'
             });
+	    div.setAttribute('title', this._button.title||"Upload");
             
             // Make sure that element opacity exists.
             // Otherwise use IE filter            
