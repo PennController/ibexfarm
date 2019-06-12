@@ -336,6 +336,51 @@ img.linklike {
     height: 1.25em;
 }
 
+#files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#files .fsep { display: none; }
+.browseDir {
+    margin: 1em;
+    max-width: 30em;
+}
+.browseDir table, .file tbody tr:first-child td:first-child {
+    width: 100%
+}
+.browseDir tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.browseDir tbody tr:first-child {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+.file {
+    width: 6em;
+    margin: 0.5em;
+}
+.file tbody tr:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.file-icon {
+    height: 3em;
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.file-icon + span {
+    margin: auto;
+    text-align: center;
+    display: block;
+    word-break: break-word;
+}
+
 .field_comment {
     color: [% lightish %];
     font-size: [% stdsmall %];
