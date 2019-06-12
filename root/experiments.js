@@ -70,7 +70,7 @@ $.widget("ui.showExperiment", {
             .append(lnk = $("<a>").attr('href', BASE_URI + 'manage/' + escape(this.options.experiment[0]))
                                   .text(this.options.experiment[0]))
             .append(" (ibex ").append(version).append(") ")
-            .append(" (").append(delete_ = $("<span>").addClass("linklike").text("delete"))
+            .append(" <br> (").append(delete_ = $("<span>").addClass("linklike").text("delete"))
             .append(" | ").append(rename = $("<span>").addClass("linklike").text("rename")).append(")")
             .append(rename_opts = $("<div>")
                     .rename({
