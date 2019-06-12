@@ -1,27 +1,6 @@
 var MAX_GETPROG_FAILS = 10;
 var UPLOAD_PROGRESS_INTERVAL = 300;
 
-// Used for setting up syntax highlighting for CodeMirror.
-var EXTENSION_TO_HIGHLIGHT_CONFIG = {
-    css: {
-        parserfile: 'parsecss.js',
-        stylesheet: 'csscolors.css'
-    },
-    js: {
-        parserfile: [ 'tokenizejavascript.js', 'parsejavascript.js' ],
-        stylesheet: 'jscolors.css',
-        indentUnit: 4
-    },
-    html: {
-        parserfile: [ 'parsecss.js', 'tokenizejavascript.js', 'parsejavascript.js', 'parsexml.js', 'parsehtmlmixed.js '],
-        stylesheet: 'xmlcolors.css'
-    },
-    '': { // Default
-        parserfile: 'parsedummy.js',
-        stylesheet: 'plain.css'
-    }
-};
-
 function show_date (date) {
     return date[0] + '-' + date[1] + '-' + date[2] + ' ' + date[3] + ':' + date[4] + ':' + date[5];
 }
@@ -733,10 +712,11 @@ $(document).ready(function () {
 
     // We don't spinnify this, as that leads to to a surfeit of spinners on page load.
     $.getJSON(BASE_URI + 'ajax/get_dirs', function (data) {
-        var sdirs = data.dirs.sort(caseInsensitiveSortingFunction);
+	var overwrite = {data_includes:"Script",chunk_includes:"Resources",results:"Results",css_includes:"Aesthetics",js_includes:"Controllers",server_state:"Counter"};
+        var sdirs = data.dirs.sort( (a,b)=>Object.keys(overwrite).indexOf(a)-Object.keys(overwrite).indexOf(b) );
         for (var i = 0; i < data.dirs.length; ++i) {
             var w;
-            $("#files").append(w = $("<div>").browseDir({ dir: sdirs[i] }));
+            $("#files").append(w = $("<div>").browseDir({ dir: overwrite[sdirs[i]]||sdirs[i] }));
             dirsWidgetHash[sdirs[i]] = w;
         }
     });
