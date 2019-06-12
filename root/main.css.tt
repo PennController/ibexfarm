@@ -57,25 +57,25 @@ div#outer2 {
     display: flex;
     margin: auto;
     text-align: center;
-    height: calc(1.25 * 12em);
+    height: 16em;
 }
 @media screen and (max-width: 1340px) {
   .button-row {
-    height: calc(2 * 1.25 * 12em) !important;
+    height: 32em !important;
     flex-direction: column;
   }
 }
 
 .button {
-    width: 20em;
+    width: 12em;
+    height: 8em;
     text-align: center;
     margin: auto;
     background-color: lightsteelblue;
     border-radius: 0.5em;
     color: white;
-    font-size: 1.25em;
+    font-size: 2em;
     display: flex;
-    height: 12em;
     margin-bottom: 1em
 }
 .button:hover {
@@ -267,7 +267,7 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
     display: flex;
     margin: auto;
     align-items: flex-start;
-    height: 16em;
+    height: 17em;
 }
 @media screen and (max-width: 1340px) {
   .flex-container {
@@ -282,7 +282,7 @@ li { margin-left: [% stdindent_2 %]; padding-left: 0; }
     border-radius: 0.5em;
     color: white;
     width: 80%;
-    height: 14em;
+    height: 15em;
 }
 .cell h2, .cell th {
     color: white;
