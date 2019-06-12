@@ -38,6 +38,16 @@ $.widget("ui.browseFile", {
 
         var spinContainer;
         this.element.append(spinContainer = $("<div>").css('float', 'left'));
+	    
+	var icon;
+	if (this.options.filename.match(/\.(mp3|ogg|wav|m4a)$/i))
+		icon = "/static/images/music-file.svg";
+	else if (this.options.filename.match(/\.(png|jpe?g|bmp|gif)$/i))
+		icon = "/static/images/image.svg";
+	else if (this.options.filename.match(/\.(mp4|webm|ogv|avi|mov)$/i))
+		icon = "/static/images/video-file.svg";
+	else
+		icon = "/static/images/text-document-line.svg";
 
         var downloadLink = BASE_URI +
                            'ajax/download/' + escape(EXPERIMENT) + '/' +
@@ -66,10 +76,12 @@ $.widget("ui.browseFile", {
                                                            .addClass(this.options.writable ? "writable" : "unwritable")
                                                            .attr('target', '_blank')
                                                            .attr('href', downloadLink)
-                                                           .text(this.options.filename)))))
+							   .append( $("<img>").attr('src', icon).addClass('file-icon') )
+							   .append( S("<span>").text(this.options.filename) )
+                                                           ))))
                         .append(delete_ = ((! this.options.writable) ? null : ++ncols && $("<td>")
                                 .append($("<div>")
-                                        .append("&nbsp;(")
+                                        .append("&nbsp;")
                                         .addClass("delete_file")
                                         //.append($("<span>").addClass("linklike").text("delete")))))
 					.append($("<img src='/static/images/recycle-bin.svg' alt='Delete' title='Delete'>")
@@ -77,13 +89,13 @@ $.widget("ui.browseFile", {
                         .append(rename = ((! this.options.writable) ? null : ++ncols && $("<td>")
                                 .append($("<div>")
                                         .addClass("rename")
-                                        .append("&nbsp;|&nbsp;")
+                                        .append("&nbsp;")
                                         //.append($("<span>").addClass("linklike").text("rename")))))
 					.append($("<img src='/static/images/tag.svg' alt='Rename' title='Rename'>")
 						.addClass("linklike")))))
                         .append(((! this.options.writable) ? null : ++ncols && $("<td>")
                                 .append($("<div>")
-                                        .append("&nbsp;|&nbsp;")
+                                        .append("&nbsp;")
                                         .append(upload = //$("<span>")
 							$("<img src='/static/images/upload.svg' alt='Upload new' title='Upload new version'>")
                                                          .addClass("linklike")
@@ -91,7 +103,7 @@ $.widget("ui.browseFile", {
 					       ))))
                         .append(((! this.options.writable || __IS_IE6__) ? null : ++ncols && $("<td>")
                                  .append($("<div>")
-                                         .append("&nbsp;|&nbsp;")
+                                         .append("&nbsp;")
                                          .append(edit = $("<span>")
                                                          .append(
                                                              //$("<span>")
@@ -99,7 +111,7 @@ $.widget("ui.browseFile", {
                                                              .addClass("linklike")
                                                                  //.text("edit")
 						)))))
-                        .append(((! this.options.writable) ? null : ++ncols && $("<td>").text(")")))
+                        .append(((! this.options.writable) ? null : ++ncols && $("<td>").text("")))
                         .attr('title', 'Modified ' + show_date(this.options.modified)))
                 .append((! this.options.writable) ? null : $("<tr>")
                         .append($("<td colspan='" + ncols + "'>")
@@ -442,19 +454,19 @@ $.widget("ui.browseDir", {
                              .append($("<tr>")
                                      .append($("<th>")
                                              .text(t.options.name)
-                                             .append($("<span>").css('font-weight', 'normal').html("&nbsp;("))
+                                             .append($("<span>").css('font-weight', 'normal').html("&nbsp;"))
                                              .append(upload = //$("<span>")
 						     $("<img src='/static/images/plus-round.svg' title='Upload a file to this directory' alt='Upload file'>")
                                                      .addClass("linklike")
                                                      //.text("upload a file to this directory")
 						    )
-                                             .append($("<span>").css('font-weight', 'normal').html("&nbsp;|&nbsp;"))
+                                             .append($("<span>").css('font-weight', 'normal').html("&nbsp;"))
                                              .append(refresh_link = //$("<span>")
 						     $("<img src='/static/images/redo-arrow.svg' title='Refresh the list of files in this directory' alt='Refresh'>")
                                                      .addClass("linklike")
                                                      //.text("refresh")
 						    )
-                                             .append($("<span>").css('font-weight', 'normal').text(")"))))
+                                             .append($("<span>").css('font-weight', 'normal').text(""))))
                              .append($("<tr>")
                                      .append($("<td>")
                                              .append(upload_msg = $("<div>").hide()))));
