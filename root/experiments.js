@@ -152,6 +152,21 @@ $.widget("ui.experimentList", {
         }
 
         spinnifyGET(this.element, this.options.url, function (data) {
+            var cexp;
+            var opts;
+            t.element.append($("<p>")
+                             .append(cexp = $("<span>")
+                                     .addClass("linklike")
+                                     .addClass("create_experiment")
+                                     .append($("<span>+</span>").addClass("plus"))
+                                     .append($("<span>Create a new experiment</span>"))
+                             .append(opts = $("<div>")
+                                     .addExperimentDialog({ createdCallback: refresh })
+                                     .hide()));
+            cexp.click(function () {
+                opts.toggle(STD_TOGGLE_SPEED);
+            });
+            
             var experiments = data.experiments.sort(function (e1, e2) { return e1[0] < e2[0] ? -1 : (e1[0] == e2[0] ? 0 : 1) });
 
             if (experiments.length == 0) {
@@ -171,20 +186,6 @@ $.widget("ui.experimentList", {
                                                 highlight: experiments[i][0] == t.options.highlight }));
                 }
             }
-
-            var cexp;
-            var opts;
-            t.element.append($("<p>")
-                             .append(cexp = $("<span>")
-                                     .addClass("linklike")
-                                     .addClass("create_experiment")
-                                     .html("&raquo; Create a new experiment"))
-                             .append(opts = $("<div>")
-                                     .addExperimentDialog({ createdCallback: refresh })
-                                     .hide()));
-            cexp.click(function () {
-                opts.toggle(STD_TOGGLE_SPEED);
-            });
         });
     }
 });
