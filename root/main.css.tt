@@ -358,7 +358,7 @@ img.linklike {
     width: 100%;
     text-align: center;
     margin: auto;
-    border-bottom: solid 1px gray;
+    border-bottom: solid 1px lightgray;
 }
 .file {
     width: 6em;
