@@ -193,7 +193,8 @@ $.widget("ui.browseFile", {
 
         if (this.options.highlight) {
             //fname.flash();
-            download.flash();
+	    //download.flash();
+            iconLink.flash();
             window.location = "#highlighted";
         }
 
