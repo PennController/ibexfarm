@@ -1,3 +1,5 @@
+/* UI icons from https://uxwing.com/ */
+
 var MAX_GETPROG_FAILS = 10;
 var UPLOAD_PROGRESS_INTERVAL = 300;
 
