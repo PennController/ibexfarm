@@ -326,6 +326,7 @@ span.create_experiment .plus:hover {
     border-radius: 0.5em;
     margin: 1em;
     padding: 1em;
+    word-break: break-all;
 }
 .experiment_list ul li.experiment a {
     font-size: 1.5em;
