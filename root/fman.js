@@ -470,10 +470,9 @@ $.widget("ui.browseDir", {
 				     		    .attr('src', '/static/images/plus-round.svg')
 				                    .attr('title', 'Upload a file to this directory')
 						    .attr('alt', 'Upload file')
-                                                    .addClass("linklike")
-				    		    .addClass("upload-dir"))
+                                                    .addClass("linklike"))
 					     )
-				     )
+				     ).addClass("upload-dir")
 			     );
 
             refresh_link.click(function () {
