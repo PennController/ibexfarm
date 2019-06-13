@@ -370,6 +370,9 @@ img.linklike {
     border-radius: 0.5em;
     cursor: pointer;
 }
+.upload-dir td.hoverClass {
+    background: lightsteelblue;
+}
 .upload-dir td img {
     height: 33%;
 }
@@ -377,6 +380,9 @@ img.linklike {
 .file {
     width: 6em;
     margin: 0.5em;
+}
+.file td:not(:first-child):hover, .file td.hoverClass {
+    border-bottom: solid 2px lightsteelblue;
 }
 .file tbody tr:first-child {
     display: flex;
