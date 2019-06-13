@@ -469,6 +469,8 @@
                 var div = self._input.parentNode;                            
                 copyLayout(self._button, div);
                 div.style.visibility = 'visible';
+		self._input.style.width = div.style.width;
+	        self._input.style.height = div.style.height;
                                 
             });
             
