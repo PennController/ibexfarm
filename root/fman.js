@@ -53,8 +53,12 @@ $.widget("ui.browseFile", {
                            'ajax/download/' + escape(EXPERIMENT) + '/' +
                            escape(this.options.dir) + '/' +
                            escape(this.options.filename);
+	if (icon != "/static/images/text-document-line.svg")
+	    downloadLink = BASE_URI + 'ibexexps/' + escape($("#username")[0].innerHTML) + '/' +
+		    	   escape(EXPERIMENT) + '/' + escape(this.options.filename);
 
         var t = this;
+	var iconLink;
         var download;
         var delete_;
         var upload;
@@ -72,10 +76,9 @@ $.widget("ui.browseFile", {
             $("<table>")
                 .append($("<tr>")
                         .append(++ncols && (fname = ($("<td>")
-                                .append(download = $("<a>")
+                                .append(iconLink = $("<a>")
                                                            .addClass(this.options.writable ? "writable" : "unwritable")
                                                            .attr('target', '_blank')
-                                                           .attr('href', downloadLink)
 							   .append( $("<img>").attr('src', icon).addClass('file-icon') )
 							   .append( $("<span>").text(this.options.filename) )
                                                            ))))
@@ -101,16 +104,28 @@ $.widget("ui.browseFile", {
                                                          .addClass("linklike")
                                                          //.text("upload new version")
 					       ))))
-                        .append(((! this.options.writable || __IS_IE6__) ? null : ++ncols && $("<td>")
+                        //.append(((! this.options.writable || __IS_IE6__) ? null : ++ncols && $("<td>")
+                        //         .append($("<div>")
+                        //                 .append("&nbsp;")
+                        //                 .append(edit = $("<span>")
+                        //                                 .append(
+                        //                                     //$("<span>")
+			//				$("<img src='/static/images/pencil.svg' alt='Edit' title='Edit'>")
+                        //                                     .addClass("linklike")
+                        //                                         //.text("edit")
+			//			))))
+			.append(++ncols && $("<td>")
                                  .append($("<div>")
                                          .append("&nbsp;")
-                                         .append(edit = $("<span>")
+                                         .append($("<a>")
                                                          .append(
-                                                             //$("<span>")
-							$("<img src='/static/images/pencil.svg' alt='Edit' title='Edit'>")
+							$("<img src='/static/images/eye.svg' alt='View' title='View'>")
                                                              .addClass("linklike")
-                                                                 //.text("edit")
-						)))))
+							)
+						 	.attr('href', downloadLink);
+						)
+					)
+		       )
                         .append(((! this.options.writable) ? null : ++ncols && $("<td>").text("")))
                         .attr('title', 'Modified ' + show_date(this.options.modified)))
                 .append((! this.options.writable) ? null : $("<tr>")
@@ -169,6 +184,11 @@ $.widget("ui.browseFile", {
                     }
                 }).hide()
         );
+	    
+	if (this.options.writable && icon == "/static/images/text-document-line.svg")
+		edit = iconLink;
+	else
+		iconLink.attr('href', downloadLink);
 
         if (this.options.highlight) {
             //fname.flash();
