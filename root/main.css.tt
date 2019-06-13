@@ -359,7 +359,21 @@ img.linklike {
     text-align: center;
     margin: auto;
     border-bottom: solid 1px lightgray;
+    margin-bottom: 0.5em;
 }
+.upload-dir td {
+    display: table-cell;
+    height: 6em;
+    width: 6em;
+    text-align: center;
+    border: solid 1px lightgray;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.upload-dir td img {
+    height: 33%;
+}
+
 .file {
     width: 6em;
     margin: 0.5em;
