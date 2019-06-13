@@ -471,8 +471,8 @@ $.widget("ui.browseDir", {
 				                    .attr('title', 'Upload a file to this directory')
 						    .attr('alt', 'Upload file')
                                                     .addClass("linklike"))
-					     )
-				     ).addClass("upload-dir")
+					     ).addClass("upload-dir")
+				     )
 			     );
 
             refresh_link.click(function () {
