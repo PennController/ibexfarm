@@ -329,7 +329,7 @@ span.create_experiment .plus:hover {
 }
 .experiment_list ul li.experiment a {
     font-size: 1.5em;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 img.linklike {
@@ -405,7 +405,7 @@ img.linklike {
     margin: auto;
     text-align: center;
     display: block;
-    word-break: break-word;
+    word-break: break-all;
 }
 
 .field_comment {
