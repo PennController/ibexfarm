@@ -354,10 +354,11 @@ img.linklike {
     flex-wrap: wrap;
     justify-content: center;
 }
-.browseDir tbody tr:first-child {
+.browseDir > table > tbody > tr:first-child {
     width: 100%;
     text-align: center;
     margin: auto;
+    border-bottom: solid 1px gray;
 }
 .file {
     width: 6em;
