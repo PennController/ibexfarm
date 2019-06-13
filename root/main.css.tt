@@ -379,7 +379,7 @@ img.linklike {
 }
 
 .file {
-    width: 6em;
+    width: 7em;
     margin: 0.5em;
 }
 .file a {
