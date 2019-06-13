@@ -381,6 +381,12 @@ img.linklike {
     width: 6em;
     margin: 0.5em;
 }
+.file a {
+    cursor: pointer;
+}  
+.file a.writable {
+    cursor: url("/static/images/pencil.svg"), auto;
+}
 .file td:not(:first-child):hover, .file td.hoverClass {
     border-bottom: solid 2px lightsteelblue;
 }
