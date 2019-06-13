@@ -122,7 +122,7 @@ $.widget("ui.browseFile", {
 							$("<img src='/static/images/eye.svg' alt='View' title='View'>")
                                                              .addClass("linklike")
 							)
-						 	.attr('href', downloadLink);
+						 	.attr('href', downloadLink)
 						)
 					)
 		       )
