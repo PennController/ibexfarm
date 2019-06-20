@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="96"
+   height="96"
+   viewBox="0 0 960 960"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="youtubeElement.svg"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="117.96611 : 808.81356 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="560.00001 : 754.57627 : 1"
+       inkscape:persp3d-origin="480 : 320 : 1"
+       id="perspective958" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient818">
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1"
+         offset="0"
+         id="stop814" />
+      <stop
+         style="stop-color:#eeeeee;stop-opacity:0"
+         offset="1"
+         id="stop816" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient818"
+       id="linearGradient820"
+       x1="16.694916"
+       y1="480"
+       x2="943.30508"
+       y2="480"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.33187494,0,0,2.0127118,-410.14742,-1448.8137)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient818"
+       id="linearGradient4567"
+       x1="482.37415"
+       y1="451.52542"
+       x2="481.69366"
+       y2="229.15254"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1047"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="67.931297"
+     inkscape:cy="55.187607"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g2047"
+     showguides="true"
+     inkscape:snap-text-baseline="false"
+     inkscape:snap-nodes="false" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:200px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;"
+     x="74.78553"
+     y="634.01178"
+     id="text1148"><tspan
+       sodipodi:role="line"
+       id="tspan1146"
+       x="74.78553"
+       y="869.94928"
+       style="stroke-width:10;font-size:200px;" /></text>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot1194"
+     style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:26.66666667px;line-height:1.25;letter-spacing:0px;word-spacing:0px"><flowRegion
+       id="flowRegion1196"><rect
+         id="rect1198"
+         width="71.142136"
+         height="38.735069"
+         x="-43.337257"
+         y="20.447437" /></flowRegion><flowPara
+       id="flowPara1200" /></flowRoot>  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:133.33332825px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:10"
+     x="77.781746"
+     y="829.18524"
+     id="text1917"><tspan
+       sodipodi:role="line"
+       id="tspan1915"
+       x="77.781746"
+       y="947.15399"
+       style="stroke-width:10" /></text>
+  <g
+     style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+     id="g2047"
+     transform="translate(144.9287,-8.7709694)">
+    <g
+       id="g2056"
+       transform="translate(0,48.960576)">
+      <path
+         style="fill:#d01818;fill-opacity:1"
+         inkscape:connector-curvature="0"
+         d="m 648.5453,192.038 c 0,0 -6.248,-44.115 -25.477,-63.485 -24.366,-25.477 -51.65,-25.642 -64.123,-27.118 -89.493,-6.52 -223.904,-6.52 -223.904,-6.52 h -0.236 c 0,0 -134.352,0 -223.893,6.52 -12.52,1.523 -39.768,1.63 -64.123,27.118 -19.24,19.37 -25.358,63.485 -25.358,63.485 0,0 -6.366,51.768 -6.366,103.643 v 48.509 c 0,51.768 6.366,103.643 6.366,103.643 0,0 6.248,44.114 25.358,63.52 24.355,25.477 56.363,24.65 70.655,27.367 51.237,4.89 217.644,6.366 217.644,6.366 0,0 134.529,-0.237 224.022,-6.638 12.52,-1.477 39.756,-1.63 64.123,-27.119 19.24,-19.37 25.476,-63.532 25.476,-63.532 0,0 6.368,-51.767 6.368,-103.643 v -48.508 c -0.13,-51.769 -6.497,-103.643 -6.497,-103.643 z m -379.8,211.007 V 223.173 l 172.892,90.237 z"
+         id="path2036" />
+      <text
+         id="text2051"
+         y="781.47998"
+         x="-114.48376"
+         style="font-style:normal;font-weight:normal;font-size:227.80867004px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.11902094"
+         xml:space="preserve"><tspan
+           style="stroke-width:7.11902094"
+           y="781.47998"
+           x="-114.48376"
+           id="tspan2049"
+           sodipodi:role="line">Youtube</tspan></text>
+    </g>
+  </g>
+</svg>

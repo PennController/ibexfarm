@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="96"
+   height="96"
+   viewBox="0 0 960 960"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="scaleElement.svg"
+   style="clip-rule:evenodd;fill-rule:evenodd;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+   inkscape:version="0.92.4 (33fec40, 2019-01-16)">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="117.96611 : 808.81356 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="560.00001 : 754.57627 : 1"
+       inkscape:persp3d-origin="480 : 320 : 1"
+       id="perspective958" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient818">
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1"
+         offset="0"
+         id="stop814" />
+      <stop
+         style="stop-color:#eeeeee;stop-opacity:0"
+         offset="1"
+         id="stop816" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient818"
+       id="linearGradient820"
+       x1="16.694916"
+       y1="480"
+       x2="943.30508"
+       y2="480"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.33187494,0,0,2.0127118,-410.14742,-1448.8137)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient818"
+       id="linearGradient4567"
+       x1="482.37415"
+       y1="451.52542"
+       x2="481.69366"
+       y2="229.15254"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1047"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="5.2149125"
+     inkscape:cx="64.42436"
+     inkscape:cy="48.66047"
+     inkscape:window-x="0"
+     inkscape:window-y="33"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     showguides="true" />
+  <g
+     id="g1125"
+     transform="translate(0,-143.30618)">
+    <g
+       transform="translate(-0.3532238,-33.683823)"
+       id="g1114">
+      <rect
+         style="opacity:1;fill:#555555;fill-opacity:1;stroke:#dbd8d1;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1108"
+         width="930.02521"
+         height="19.175774"
+         x="15.34062"
+         y="503.61649"
+         ry="9.5878868" />
+      <rect
+         style="opacity:1;fill:#e7e7e7;fill-opacity:1;stroke:#5a5546;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1110"
+         width="27.80485"
+         height="74.785553"
+         x="701.83344"
+         y="476.29105"
+         ry="20.134565"
+         rx="13.902425" />
+    </g>
+    <text
+       id="text1118"
+       y="802.30481"
+       x="78.940468"
+       style="font-style:normal;font-weight:normal;font-size:296.63052368px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:7.4157629"
+       xml:space="preserve"><tspan
+         style="stroke-width:7.4157629"
+         y="802.30481"
+         x="78.940468"
+         id="tspan1116"
+         sodipodi:role="line">Scale</tspan></text>
+  </g>
+</svg>
