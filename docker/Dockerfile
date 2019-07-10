@@ -93,7 +93,7 @@ RUN mkdir /var/ibexfarm && \
 RUN cd /tmp && \
     git clone https://github.com/penncontroller/ibex && \
     cd ibex && \
-    git checkout 56f292d && \
+    git checkout 12a6165 && \
     rm -rf .git* && \
     rm -rf docs && \
     rm -rf contrib && \
