@@ -317,13 +317,14 @@ $.widget("ui.browseFile", {
             
                 function save(closeAfter) {
                     return function (callback) {
-                        stat.text("saving");
+                        stat.text("saving...");
                         stat.css("visibility","visible");
-                        spinnifyPOST(
-                            stat,
-                            BASE_URI + 'ajax/upload_file/' + escape(EXPERIMENT) + '/' + escape(t.options.dir) + '/' + escape(t.options.filename),
-                            { contents: editor.getValue() },
-                            function () {
+			spinnifyAjax(stat, {
+			    url: BASE_URI + 'ajax/upload_file/' + escape(EXPERIMENT) + '/' + escape(t.options.dir) + '/' + escape(t.options.filename),
+			    data: { contents: editor.getValue() },
+			    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+			    type: "POST",
+			    success: function () {
                                 if (closeAfter) {
                                     cleanup.call(editdialog);
                                     // download.flash();
@@ -339,9 +340,13 @@ $.widget("ui.browseFile", {
                                 if (callback && callback instanceof Function)
                                     callback.call();
                             },
-                            null/*type*/,
-                            false/*dontWait*/
-                        );
+			    dataType: null,
+			    error: function(){ 
+				    stat.text("Failed to save, try clicking again").flash({
+					    type: 'message'
+				    }); 
+			    }
+			}, false, undefined);
                     }
                 }
             
@@ -369,7 +374,7 @@ $.widget("ui.browseFile", {
                         "Discard changes": cleanup,
                         "Save changes": save(false),
                         "Save and close": save(true),
-                        "Save and test": function(){openLink(); save(false).call(this, ()=>{link.location=href;link.focus();}); },
+                        "Save and test": function(){save(false).call(this, ()=>{openLink(); link.location=href;link.focus();}); },
                     },
                     open: function(){
                         $(this).parent().find("div.ui-dialog-buttonpane div.ui-dialog-buttonset").prepend(stat).prepend($(link));
