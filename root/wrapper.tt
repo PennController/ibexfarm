@@ -86,6 +86,8 @@ You are logged in as <a id="username" href="[% c.uri_for("/myaccount") %]">[% c.
       <li>There is a total file size limit of <strong>32MB</strong> on PCIbex Farm accounts.</li>
       <li>This means that the total size of all your files across your experiments cannot exceed 32MB.</li>
       <li>If you exceed this limit, you will not be able to upload new files nor save new edits.</li>
+      <li><strong>This is a general notification: you seing this message does not <em>necessarily</em> mean that your account exceeds the limit.</strong></li>
+      <li><em>If</em> you exceed this limit, you will not be able to upload new files or save new edits (no matter how many times you click <em>Save</em>).</li>
       <li>We are sorry we cannot afford to provide more storage space. We hope we will be able to lift this limit in the future.</li>
       </ul>
       <p><strong>Tips</strong></p>
