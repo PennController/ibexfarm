@@ -301,8 +301,20 @@ $.widget("ui.browseFile", {
             });
         }
         if (edit) {
+	    // Warning message for unsaved changes before leaving
+	    window.onbeforeunload = function (e) {
+		    e = e || window.event;
+		    let warningMessage = 'Some changes were not saved---do you wan to leave?';
+		    // For IE and Firefox prior to version 4
+		    if (e) {
+			e.returnValue = warningMessage;
+		    }
+		    // For Safari
+		    return warningMessage;
+	    };
             edit.click(function () {
                 var editor = null;
+		var unsavedChanges = false;
 		    
                 $("body").css('overflow', 'hidden');
 
@@ -325,6 +337,7 @@ $.widget("ui.browseFile", {
 			    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 			    type: "POST",
 			    success: function () {
+				unsavedChanges = false;
                                 if (closeAfter) {
                                     cleanup.call(editdialog);
                                     // download.flash();
@@ -400,6 +413,9 @@ $.widget("ui.browseFile", {
                         enableSnippets: true,
                         enableLiveAutocompletion: true
                     });
+		    editor.on("change", function(e){
+			unsavedChanges = true;
+		    });
             
                     var ACglobalPattern = new RegExp("/[*]! ([$]AC[$] .+? [$]AC[$]) [*]/", "g");
                     var ACpattern = new RegExp("[$]AC[$] ([^.]+?)[.]([^\\s]+?) (.+?) [$]AC[$]", "g");
