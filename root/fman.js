@@ -301,20 +301,22 @@ $.widget("ui.browseFile", {
             });
         }
         if (edit) {
+	    var unsavedChanges = false;
 	    // Warning message for unsaved changes before leaving
 	    window.onbeforeunload = function (e) {
 		    e = e || window.event;
 		    let warningMessage = 'Some changes were not saved---do you wan to leave?';
 		    // For IE and Firefox prior to version 4
-		    if (e) {
-			e.returnValue = warningMessage;
+		    if (unsavedChanges){
+			    if (e) {
+				e.returnValue = warningMessage;
+			    }
+			    // For Safari
+			    return warningMessage;
 		    }
-		    // For Safari
-		    return warningMessage;
 	    };
             edit.click(function () {
                 var editor = null;
-		var unsavedChanges = false;
 		    
                 $("body").css('overflow', 'hidden');
 
