@@ -3,6 +3,8 @@
 var MAX_GETPROG_FAILS = 10;
 var UPLOAD_PROGRESS_INTERVAL = 300;
 
+var unsavedChanges = false;
+
 function show_date (date) {
     return date[0] + '-' + date[1] + '-' + date[2] + ' ' + date[3] + ':' + date[4] + ':' + date[5];
 }
@@ -301,20 +303,17 @@ $.widget("ui.browseFile", {
             });
         }
         if (edit) {
-	    var unsavedChanges = false;
 	    // Warning message for unsaved changes before leaving
-	    window.onbeforeunload = function (e) {
+	    window.addEventListener("beforeunload", function (e) {
 		    e = e || window.event;
-		    let warningMessage = 'Some changes were not saved---do you wan to leave?';
-		    // For IE and Firefox prior to version 4
+		    let warningMessage;
 		    if (unsavedChanges){
-			    if (e) {
-				e.returnValue = warningMessage;
-			    }
-			    // For Safari
-			    return warningMessage;
+		      warningMessage = 'Some changes were not saved---do you wan to leave?'
+		      if (e)
+			e.returnValue = warningMessage;
 		    }
-	    };
+		    return warningMessage;
+	    });
             edit.click(function () {
                 var editor = null;
 		    
