@@ -46,6 +46,7 @@ RUN cd /tmp && \
 # JEREMY: adding metacpan as a mirror (3/22/19: Test-WWW-Mechanize-PSGI not up to date on cpan)
 # Install the remaining required perl modules using cpanm.
 RUN cpanm --mirror https://cpan.metacpan.org/ --notest --no-man-pages --no-wget --curl \
+    YAML \
     Moose \
     MooseX::Types \
     MooseX::ConfigFromFile \
