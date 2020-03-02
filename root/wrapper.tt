@@ -76,16 +76,15 @@ You are logged in as <a id="username" href="[% c.uri_for("/myaccount") %]">[% c.
 </p>
  
 <div style="color: #BD2031; margin-bottom: -2em;" class="box">
-  <strong>Important note:</strong> PCIbex Farm accounts' storage space is limited  to <strong>32MB</strong>; exceeding the limit will prevent you from making changes to your experiments.
+  <strong>Important note:</strong> PCIbex Farm accounts' storage space is limited  to <strong>64MB</strong>; exceeding the limit will prevent you from making changes to your experiments.
   <a onclick="document.getElementById('popinlimit').style.display = 'table';" href="#">Click here to learn more</a>
   <div id="popinlimit" class="box" style="position: fixed; top: 5vh; left: 10vw; width: 80vw; height: 90vh; text-align: center; z-index: 1; display: none;">
     <div style="position: absolute; top: 1em; right: 1em;z-index: 2;"><a onclick="document.getElementById('popinlimit').style.display = 'none'" href="#">X</a></div>
     <div style="position: relative; top: 0; left: 0; display: table-cell;vertical-align: middle;/*! text-align: center; */">
       <p><strong>What does this mean?</strong></p>
       <ul style="max-width: 75vw; width: 0vw;text-align: left;margin: auto;min-width: 50vw;">
-      <li>There is a total file size limit of <strong>32MB</strong> on PCIbex Farm accounts.</li>
-      <li>This means that the total size of all your files across your experiments cannot exceed 32MB.</li>
-      <li>If you exceed this limit, you will not be able to upload new files nor save new edits.</li>
+      <li>There is a total file size limit of <strong>64MB</strong> on PCIbex Farm accounts.</li>
+      <li>This means that the total size of all your files across your experiments cannot exceed 64MB.</li>
       <li><strong>This is a general notification: you seing this message does not <em>necessarily</em> mean that your account exceeds the limit.</strong></li>
       <li><em>If</em> you exceed this limit, you will not be able to upload new files or save new edits (no matter how many times you click <em>Save</em>).</li>
       <li>We are sorry we cannot afford to provide more storage space. We hope we will be able to lift this limit in the future.</li>
@@ -93,7 +92,7 @@ You are logged in as <a id="username" href="[% c.uri_for("/myaccount") %]">[% c.
       <p><strong>Tips</strong></p>
       <ul style="max-width: 75vw; width: 0vw;text-align: left;margin: auto;min-width: 50vw;">
       <li>As you collect data, results files can quickly get big. <strong>Save them to your local device</strong> and <strong>then</strong> delete them from the PCIbex Farm.</li>
-      <li>Host your multimedia files on a distant server instead (see <tt>PennController.AddHost</tt>).</li>
+      <li>Host your multimedia files on a distant server instead (see <a href='https://www.pcibex.net/wiki/penncontroller-addhost/' target='_blank'><tt>AddHost</tt></a>).</li>
       <li>Even though it is not optimal, you can use services like Dropbox, Google Drive or Github to host your resources. Look up the documentation and the forums for more info.</li>
       <li>Always prefer to use a dedicated server through a service like Dreamhost for example, if you have access to one.</li>
       <li>If you have reached the limit: delete files and <a href="mailto:support@pcibex.net">send us an email</a> with your account name so we can take it off the exceed-quota list and you can edit your projects again.</li>
