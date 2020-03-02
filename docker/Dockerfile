@@ -141,15 +141,15 @@ writable: [ 'data_includes/*', 'results/*', 'server_state/*','chunk_includes/*' 
 \n\
 enforce_quotas: 1\n\
 quota_max_files_in_dir: 500\n\
-quota_max_file_size: 33554432\n\
-quota_max_total_size: 33554432\n\
+quota_max_file_size: 67108864\n\
+quota_max_total_size: 67108864\n\
 quota_record_dir: '/tmp/quota'\n\
 \n\
 password_protect_apache:\n\
     htpasswd: '/usr/bin/htpasswd'\n\
     passwd_file: '/etc/apache2/conf.d/httpdpasswd'\n\
 \n\
-max_upload_size_bytes: 33554432\n\
+max_upload_size_bytes: 67108864\n\
 \n\
 experiment_password_protection: Apache\n\
 \n\
