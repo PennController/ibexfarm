@@ -23,7 +23,7 @@ RUN apk add \
 
 # Install modperl
 RUN cd /tmp && \
-    wget http://apache.org/dist/perl/mod_perl-2.0.10.tar.gz && \
+    wget https://archive.apache.org/dist/perl/mod_perl-2.0.10.tar.gz && \
     tar -xzf mod_perl-2.0.10.tar.gz && \
     cd mod_perl-2.0.10/ && \
     perl Makefile.PL MP_APXS=/usr/bin/apxs && \
